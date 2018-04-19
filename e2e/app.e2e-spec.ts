@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('dpc2-flood App', () => {
+describe('dpc2-hms App', () => {
   let page: AppPage;
 
   beforeEach(() => {

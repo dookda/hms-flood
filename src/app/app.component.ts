@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(public location: Location) { }
+
+  isMap(path) {
+    let titlee = this.location.prepareExternalUrl(this.location.path());
+    titlee = titlee.slice(1);
+    if (path === titlee) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  refresh(): void {
+    window.location.reload();
+  }
 }
