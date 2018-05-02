@@ -461,7 +461,16 @@ input:focus {
     background: -ms-linear-gradient(top, #9368E9 0%, #943bea 100%);
     background: linear-gradient(to bottom, #9368E9 0%, #943bea 100%);
     background-size: 150% 150%; }
-
+    .sidebar[data-color="dark-green"]:after,
+    .bootstrap-navbar[data-color="dark-green"]:after {
+      background: #087a06;
+      background: -moz-linear-gradient(top, #087a06 0%, #087a06 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #087a06), color-stop(100%, #087a06));
+      background: -webkit-linear-gradient(top, #087a06 0%, #087a06 100%);
+      background: -o-linear-gradient(top, #087a06 0%, #087a06 100%);
+      background: -ms-linear-gradient(top, #087a06 0%, #087a06 100%);
+      background: linear-gradient(to bottom, #087a06 0%, #087a06 100%);
+      background-size: 150% 150%; }
 .main-panel {
   background: rgba(203, 203, 210, 0.15);
   position: relative;
