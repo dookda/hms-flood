@@ -1,7 +1,9 @@
 export class Item {
     constructor(private fields: any) {
-        for (let f in fields) {
-            this[f] = fields[f];
+        for (const f in fields) {
+            if (f) {
+                this[f] = fields[f];
+            }
         }
     }
 }
